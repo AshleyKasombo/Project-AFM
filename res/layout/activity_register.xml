@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_first_screen"
+    android:layout_height="match_parent"
+    tools:context="com.example.actionfootballmanager.Register">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Enter your credentials"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editTextManagername"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="67dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:drawableStart="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Enter Manager Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextManagername"
+        android:layout_alignStart="@+id/editTextManagername"
+        android:layout_below="@+id/editTextManagername"
+        android:layout_marginTop="29dp"
+        android:drawableLeft="@drawable/ic_action_name"
+        android:drawableStart="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+
+        android:layout_alignLeft="@+id/editTextUsername"
+        android:layout_alignStart="@+id/editTextUsername"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_marginTop="29dp"
+        android:drawableLeft="@drawable/ic_action_name_one"
+        android:drawableStart="@drawable/ic_action_name_one"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editTextPassword"
+        android:layout_alignRight="@+id/editTextPassword"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="61dp"
+        android:drawableLeft="@drawable/ic_action_name_three"
+        android:drawableStart="@drawable/ic_action_name_three"
+        android:text="@string/register"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/buttonRegister"
+        android:layout_alignStart="@+id/buttonRegister"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="31dp"
+        android:drawableLeft="@drawable/ic_action_name_three"
+        android:textColor="@color/colorPrimary"
+        android:text="Login" />
+
+
+</RelativeLayout>
